@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-image: url("https://cdn.pixabay.com/photo/2019/11/14/16/12/ocean-4626520_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    .app{
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+        align-items: center;
+        background-color: rgb(0,0,0,0.7);
+        height: 100vh;
+
+    }
+    .header h1{
+        font-size: 50px;
+        color: orange;
+        text-shadow: 1px 3px rgb(0,0,0,0.9);
+        margin-top: 80PX;
+    }
+    .header input{
+        width: 100%;
+        padding:10px ;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid black;
+        color: orange;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .city{
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-shadow: 1px 3px rgb(0,0,0,0.9) ;
+    }
+    .temp{
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .desc{
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .minmax{
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        
+    }
+    .container{
+        display: flex;
+        gap: 5px;
+    }
+    .mar-bot{
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body> 
+   
+      
+<div class="app">
+    <div class="header ">
+        <h1>Hava Durumu</h1>
+        <div class="container " style="margin-top: 50px;">
+        <input type="text" id="sehir" value="" placeholder="Şehir Giriniz" >
+        <button style="height: 50px; width: 90px; margin-top: 10px; border-radius: 6px; background-color: chocolate;" id="btn">Search</button>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="city mar-bot"></div>
+        <div class="temp mar-bot"></div>
+        <div class="desc mar-bot"></div>
+        <div class="minmax mar-bot"></div>
+    </div>
+</div>
+    
+
+
+
+    
+
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
